@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import image from "../../img/luxurious_outdoor_hot_tub.jpg";
+import { Link } from "react-router-dom";
 
 export const HeaderStyled = styled.header`
   position: relative;
@@ -38,4 +39,20 @@ export const HeaderWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+`;
+
+export const LogoHeaderLink = styled(Link)``;
+
+export const LogoHeaderSvg = styled.svg`
+  width: 80px;
+  height: 60px;
+  fill: var(--accent);
+  transition: transform 0.3s ease, filter 0.3s ease, color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2) rotate(15deg);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+    fill: #ff5500;
+  }
 `;
