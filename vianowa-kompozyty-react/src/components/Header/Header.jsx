@@ -1,4 +1,8 @@
+import { useState } from "react";
+import Icons from "../../icons/sprite.svg";
+import { BurgerButtonOpen } from "../BurgerButtonOpen/BurgerButtonOpen.jsx";
 import { Container } from "../Container/Container.jsx";
+import { Navigation } from "../Navigation/Navigation.jsx";
 import {
   HeaderStyled,
   HeaderWrapper,
@@ -8,6 +12,13 @@ import {
 } from "./Header.styled";
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    document.body.classList.toggle("no-scroll", !isMenuOpen);
+  };
+
   return (
     <HeaderStyled>
       <HeaderWrapperRow>
@@ -15,9 +26,11 @@ export const Header = () => {
           <HeaderWrapper>
             <LogoHeaderLink>
               <LogoHeaderSvg>
-                <use href="../../icons/sprite.svg#icon-logo"></use>
+                <use href={`${Icons}#icon-logo`}></use>
               </LogoHeaderSvg>
             </LogoHeaderLink>
+            <Navigation isOpen={isMenuOpen} onClick={toggleMenu} />
+            <BurgerButtonOpen onClick={toggleMenu} />
           </HeaderWrapper>
         </Container>
       </HeaderWrapperRow>
