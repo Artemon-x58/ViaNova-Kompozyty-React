@@ -1,4 +1,5 @@
 import { AboutProducts } from "../AboutProducts/AboutProducts";
+import { Advantages } from "../Advantages/Advantages";
 import { Hero } from "../Hero/Hero";
 import { Section } from "../Section/Section";
 
@@ -11,7 +12,9 @@ export const Main = () => {
       <Section>
         <AboutProducts />
       </Section>
-      <Section></Section>
+      <Section>
+        <Advantages />
+      </Section>
       <Section></Section>
     </main>
   );

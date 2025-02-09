@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import "../../fonts/bebasneue/bebasneue.css";
+import "../../fonts/roboto/roboto.css";
 
 export const GlobalStyles = createGlobalStyle`
  :root {

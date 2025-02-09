@@ -24,8 +24,6 @@ export const AboutProductsImg = styled.img`
   }
 `;
 
-export const AboutProductsTextWrapper = styled.div``;
-
 export const AboutProductsTitle = styled.h2`
   margin-bottom: 15px;
   font-family: var(--font-accent);

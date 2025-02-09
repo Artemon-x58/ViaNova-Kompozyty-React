@@ -55,4 +55,8 @@ export const LogoHeaderSvg = styled.svg`
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
     fill: #ff5500;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 130px;
+  }
 `;

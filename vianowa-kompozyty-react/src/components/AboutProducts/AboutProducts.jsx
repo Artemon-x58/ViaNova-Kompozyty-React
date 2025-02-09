@@ -3,7 +3,6 @@ import { Container } from "../Container/Container";
 import {
   AboutProductsImg,
   AboutProductsSubtitle,
-  AboutProductsTextWrapper,
   AboutProductsTitle,
   AboutProductsWrapper,
 } from "./AboutProducts.styled";
@@ -13,7 +12,7 @@ export const AboutProducts = () => {
     <Container>
       <AboutProductsWrapper>
         <AboutProductsImg src={Img} alt="Balia ogrodowa" />
-        <AboutProductsTextWrapper>
+        <div>
           <AboutProductsTitle>Balia ogrodowa</AboutProductsTitle>
           <AboutProductsSubtitle>
             Balia ogrodowa to nowoczesne rozwiązanie dla osób ceniących relaks w
@@ -26,7 +25,7 @@ export const AboutProducts = () => {
             podgrzewania, zapewnia komfort użytkowania. To stylowy element
             ogrodu, który tworzy oazę spokoju i relaksu.
           </AboutProductsSubtitle>
-        </AboutProductsTextWrapper>
+        </div>
       </AboutProductsWrapper>
     </Container>
   );
