@@ -1,3 +1,4 @@
+import { AboutProducts } from "../AboutProducts/AboutProducts";
 import { Hero } from "../Hero/Hero";
 import { Section } from "../Section/Section";
 
@@ -7,7 +8,9 @@ export const Main = () => {
       <Section>
         <Hero />
       </Section>
-      <Section></Section>
+      <Section>
+        <AboutProducts />
+      </Section>
       <Section></Section>
       <Section></Section>
     </main>
