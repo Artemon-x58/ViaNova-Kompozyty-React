@@ -86,3 +86,23 @@ export const addressData = [
     text: "42-240 Kościelec ul. Miodowa 9",
   },
 ];
+
+export const footerProductsArr = [
+  { name: "BALIE", path: "/balie" },
+  { name: "ZESTAWY", path: "/zestawy" },
+  { name: "AKCESORIA", path: "/akcesoria" },
+  { name: "WKŁADY", path: "/wklady" },
+  { name: "SAUNY", path: "/sauny" },
+];
+
+export const footerInfoArr = [
+  { name: "KONTAKT", path: "/contacts" },
+  { name: "POLITYKA PRYWATNOŚCI", path: "/politic" },
+  { name: "POLITYKA PLIKÓW COOKIES", path: "/cookies" },
+];
+
+export const footerSocialListIcons = [
+  { name: "icon-facebook" },
+  { name: "icon-instagram" },
+  { name: "icon-tiktok" },
+];

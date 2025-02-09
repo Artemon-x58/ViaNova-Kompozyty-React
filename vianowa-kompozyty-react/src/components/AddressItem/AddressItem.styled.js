@@ -5,7 +5,10 @@ export const AddressLink = styled.a`
   align-items: center;
 
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem);
+  font-size: ${({ format }) =>
+    format === "location"
+      ? "clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"
+      : "12px"};
   color: #f0dfcc;
   line-height: 1.7;
 
@@ -24,8 +27,8 @@ export const AddressLink = styled.a`
 export const AddressSvg = styled.svg`
   margin-right: 15px;
   fill: #f0dfcc;
-  width: 30px;
-  height: 30px;
+  width: ${({ format }) => (format === "location" ? "30px" : "20px")};
+  height: ${({ format }) => (format === "location" ? "30px" : "20px")};
 
   transition: fill 0.2s ease-in;
 `;
@@ -35,7 +38,10 @@ export const AddressText = styled.p`
   align-items: center;
 
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem);
+  font-size: ${({ format }) =>
+    format === "location"
+      ? "clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"
+      : "12px"};
   color: #f0dfcc;
   line-height: 1.7;
   cursor: pointer;
