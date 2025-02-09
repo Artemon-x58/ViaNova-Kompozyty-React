@@ -1,6 +1,7 @@
 import { AboutProducts } from "../AboutProducts/AboutProducts";
 import { Advantages } from "../Advantages/Advantages";
 import { Hero } from "../Hero/Hero";
+import { Location } from "../Location/Location";
 import { Section } from "../Section/Section";
 
 export const Main = () => {
@@ -15,7 +16,9 @@ export const Main = () => {
       <Section>
         <Advantages />
       </Section>
-      <Section></Section>
+      <Section>
+        <Location />
+      </Section>
     </main>
   );
 };

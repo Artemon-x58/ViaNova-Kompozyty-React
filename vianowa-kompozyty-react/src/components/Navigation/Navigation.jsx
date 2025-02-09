@@ -1,3 +1,4 @@
+import { navListArr } from "../../data/data";
 import { BurgerButtonClose } from "../BurgerButtonClose/BurgerButtonClose";
 import {
   NavigationItem,
@@ -5,17 +6,6 @@ import {
   NavigationList,
   NavigationStyled,
 } from "./Navigation.styled";
-
-const navListArr = [
-  { name: "STRONA GŁÓWNA", path: "/" },
-  { name: "BALIE", path: "/balie" },
-  { name: "ZESTAWY", path: "/zestawy" },
-  { name: "AKCESORIA", path: "/akcesoria" },
-  { name: "WKŁADY", path: "/wklady" },
-  { name: "SAUNY", path: "/sauny" },
-  { name: "GALERIA", path: "/galeria" },
-  { name: "KONTAKT", path: "/kontakt" },
-];
 
 export const Navigation = ({ isOpen, onClick }) => {
   return (
