@@ -75,7 +75,7 @@ export const FooterContactsWrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    gap: 75px;
+    gap: 130px;
   }
 
   @media screen and (min-width: 1200px) {
