@@ -1,13 +1,15 @@
-import { Footer } from "./components/Footer/Footer";
-import { Header } from "./components/Header/Header";
-import { Main } from "./components/Main/Main";
+import { Navigate, Route, Routes } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { GalleryPage } from "./pages/GalleryPage";
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/galeria" element={<GalleryPage />} />
+        <Route path="*" element={<Navigate to={"/"} />} />
+      </Routes>
     </>
   );
 }
