@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Icon from "../../icons/sprite.svg";
 import { AddressLink, AddressSvg, AddressText } from "./AddressItem.styled";
 
@@ -11,4 +12,12 @@ export const AddressItem = ({ href, icon, text, type, format }) => {
       {text}
     </Component>
   );
+};
+
+AddressItem.propTypes = {
+  href: PropTypes.string,
+  icon: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  format: PropTypes.string.isRequired,
 };

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { navListArr } from "../../data/data";
 import { BurgerButtonClose } from "../BurgerButtonClose/BurgerButtonClose";
 import {
@@ -9,7 +10,7 @@ import {
 
 export const Navigation = ({ isOpen, onClick }) => {
   return (
-    <NavigationStyled isOpen={isOpen}>
+    <NavigationStyled className={isOpen ? "open" : ""}>
       <NavigationList>
         {navListArr.map((item) => (
           <NavigationItem key={item.name}>
@@ -20,4 +21,9 @@ export const Navigation = ({ isOpen, onClick }) => {
       <BurgerButtonClose onClick={onClick} />
     </NavigationStyled>
   );
+};
+
+Navigation.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
 };

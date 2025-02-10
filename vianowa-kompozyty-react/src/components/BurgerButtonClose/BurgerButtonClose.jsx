@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Icons from "../../icons/sprite.svg";
 import {
   BurgerButtonCloseStyled,
@@ -12,4 +13,8 @@ export const BurgerButtonClose = ({ onClick }) => {
       </BurgerButtonCloseSvg>
     </BurgerButtonCloseStyled>
   );
+};
+
+BurgerButtonClose.propTypes = {
+  onClick: PropTypes.func.isRequired,
 };

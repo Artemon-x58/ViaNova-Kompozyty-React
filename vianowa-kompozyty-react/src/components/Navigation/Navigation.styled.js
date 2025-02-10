@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const NavigationStyled = styled.nav`
   position: fixed;
   top: 0;
-  right: 0; /* Меню изначально спрятано справа */
+  right: 0;
   height: 100vh;
   width: 80%;
   padding: 50px 20px;
@@ -14,17 +14,15 @@ export const NavigationStyled = styled.nav`
   gap: 20px;
   text-align: center;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transform: translateX(100%); /* Скрываем меню за экран */
+  transform: translateX(100%);
   opacity: 0.95;
   z-index: 100;
   border-left: 2px solid var(--accent);
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
 
-  ${({ isOpen }) =>
-    isOpen &&
-    `
-    transform: translateX(0); /* Показываем меню */
-  `}
+  &.open {
+    transform: translateX(0);
+  }
 
   @media screen and (min-width: 1200px) {
     position: static;

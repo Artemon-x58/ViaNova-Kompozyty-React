@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { FooterItem } from "../FooterItem/FooterItem";
 import { FooterListStyled, FooterListTitle } from "./FooterList.styled";
 
@@ -12,4 +13,14 @@ export const FooterList = ({ arr, title }) => {
       </FooterListStyled>
     </div>
   );
+};
+
+FooterList.propTypes = {
+  title: PropTypes.string.isRequired,
+  arr: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
