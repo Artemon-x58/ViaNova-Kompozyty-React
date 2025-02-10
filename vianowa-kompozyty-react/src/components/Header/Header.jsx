@@ -30,7 +30,7 @@ export const Header = () => {
       <HeaderWrapperRow>
         <Container>
           <HeaderWrapper>
-            <LogoHeaderLink>
+            <LogoHeaderLink to={"/"}>
               <LogoHeaderSvg>
                 <use href={`${Icons}#icon-logo`}></use>
               </LogoHeaderSvg>
