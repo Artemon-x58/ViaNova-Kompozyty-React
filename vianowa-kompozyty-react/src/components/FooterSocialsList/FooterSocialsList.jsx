@@ -14,9 +14,9 @@ export const FooterSocialsList = () => {
     <FooterSocialsListWrapper>
       <FooterListTitle>SOCIAL MEDIA</FooterListTitle>
       <FooterSocialListStyle>
-        {footerSocialListIcons.map(({ name }) => (
+        {footerSocialListIcons.map(({ name, link }) => (
           <FooterSocialItem key={name}>
-            <FooterSocialLink target="_blank">
+            <FooterSocialLink target="_blank" href={link}>
               <FooterSocialSvg>
                 <use href={`${Icon}#${name}`}></use>
               </FooterSocialSvg>

@@ -107,7 +107,16 @@ export const footerInfoArr = [
 ];
 
 export const footerSocialListIcons = [
-  { name: "icon-facebook" },
-  { name: "icon-instagram" },
-  { name: "icon-tiktok" },
+  {
+    name: "icon-facebook",
+    link: "https://www.facebook.com/profile.php?id=100087506284006&rdid=uEaVHViajrDtYFuO&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15997LsvDf%2F#",
+  },
+  {
+    name: "icon-instagram",
+    link: "https://www.instagram.com/vianovakompozyty?igsh=N2dhOGM3ZDM0Mmdj",
+  },
+  {
+    name: "icon-tiktok",
+    link: "https://www.tiktok.com/@vianova.kompozyty?_t=ZN-8tOR33OCed4&_r=1",
+  },
 ];
