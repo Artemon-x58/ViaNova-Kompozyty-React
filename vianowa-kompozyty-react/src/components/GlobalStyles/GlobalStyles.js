@@ -15,11 +15,21 @@ export const GlobalStyles = createGlobalStyle`
   border: none;
 }
 
+::-webkit-scrollbar {
+    width: 4px; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 10px;
+  }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 
 /* Links */
 

@@ -120,3 +120,86 @@ export const footerSocialListIcons = [
     link: "https://www.tiktok.com/@vianova.kompozyty?_t=ZN-8tOR33OCed4&_r=1",
   },
 ];
+
+export const vatsInfoArr = [
+  {
+    id: "1",
+    name: "Balia 1",
+    imgPath: "/img/balie/balia-1.jpg",
+    minPrice: "11000 zł",
+    about:
+      "Klasyczna balia ogrodowa wykonana z wysokiej jakości drewna, zapewniająca elegancki wygląd i przyjemne kąpiele na świeżym powietrzu. Idealna do relaksu po długim dniu pracy.",
+  },
+  {
+    id: "2",
+    name: "Balia 2",
+    imgPath: "/img/balie/balia-2.jpg",
+    minPrice: "9000 zł",
+    about:
+      "Nowoczesna balia z wbudowanym systemem ogrzewania, który pozwala na kąpiel w ciepłej wodzie przez cały rok, nawet w chłodniejszych miesiącach. Wygodna i komfortowa w użytkowaniu.",
+  },
+  {
+    id: "3",
+    name: "Balia 3",
+    imgPath: "/img/balie/balia-3.webp",
+    minPrice: "12000 zł",
+    about:
+      "Balie wyposażone w funkcję hydroterapii, która pozwala na masujące kąpiele. Doskonałe rozwiązanie dla osób szukających relaksu i regeneracji ciała.",
+  },
+  {
+    id: "4",
+    name: "Balia 4",
+    imgPath: "/img/balie/balia-4.jpg",
+    minPrice: "13000 zł",
+    about:
+      "Ta balia zaprojektowana z myślą o osobach, które chcą cieszyć się widokiem swojego ogrodu podczas kąpieli. Otwarta konstrukcja pozwala na wspaniałe widoki w otoczeniu natury.",
+  },
+  {
+    id: "5",
+    name: "Balia 5",
+    imgPath: "/img/balie/balia-5.jpg",
+    minPrice: "15000 zł",
+    about:
+      "Okrągła balia ogrodowa to klasyka, która pasuje do każdego ogrodu. Doskonała do spotkań z rodziną i przyjaciółmi, zapewniając komfortową przestrzeń do relaksu.",
+  },
+  {
+    id: "6",
+    name: "Balia 6",
+    imgPath: "/img/balie/balia-6.jpg",
+    minPrice: "13000 zł",
+    about:
+      "Balie na eleganckich nogach, które dodają ogrodowi stylu. Zwiększona stabilność zapewnia komfort użytkowania, a nowoczesny design świetnie komponuje się z różnymi stylami ogrodów.",
+  },
+  {
+    id: "7",
+    name: "Balia 7",
+    imgPath: "/img/balie/balia-7.jpg",
+    minPrice: "12400 zł",
+    about:
+      "Balie z wbudowanym oświetleniem LED to doskonała opcja na wieczorne kąpiele. Kolorowe światła tworzą niepowtarzalny klimat, idealny na relaksujące noce w ogrodzie.",
+  },
+  {
+    id: "8",
+    name: "Balia 8",
+    imgPath: "/img/balie/balia-8.webp",
+    minPrice: "11900 zł",
+    about:
+      "Balia wyposażona w zaawansowany system filtracji, który zapewnia czystość wody i zmniejsza potrzebę jej częstych wymian. Użyteczne rozwiązanie dla tych, którzy cenią sobie wygodę i ekologiczną funkcjonalność.",
+  },
+  {
+    id: "9",
+    name: "Balia 9",
+    imgPath: "/img/balie/balia-9.jpg",
+    minPrice: "12800 zł",
+    about:
+      "Mniejsza balia ogrodowa, idealna do zabawy dla dzieci. Bezpieczna i łatwa do napełniania wodą, zapewniająca maluchom radość i zabawę w ogrodzie.",
+  },
+  {
+    id: "10",
+    name: "Balia 10",
+    imgPath: "/img/balie/balia-10.webp",
+    minPrice: "18800 zł",
+    about:
+      "Wykonana z trwałego modrzewia, ta balia charakteryzuje się wyjątkową odpornością na warunki atmosferyczne. Naturalny wygląd drewna pasuje do każdego ogrodu, a solidna konstrukcja gwarantuje długowieczność.",
+  },
+];

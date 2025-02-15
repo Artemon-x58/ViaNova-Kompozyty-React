@@ -1,28 +1,23 @@
 import { Section } from "../Section/Section";
 import { Container } from "../Container/Container";
-import { GalleryItem } from "../GalleryItem/GalleryItem";
-import { GalleryListStyled } from "./GalleryList.styled";
 import { PagesTitleAndSubtitle } from "../PagesTitleAndSubtitle/PagesTitleAndSubtitle";
+import { VatsListStyled } from "./VatsList.styled";
+import { VatsItem } from "../VatsItem/VatsItem";
 import { vatsInfoArr } from "../../data/data";
 
-export const GalleryList = () => {
+export const VatsList = () => {
   return (
     <Section>
       <Container>
         <PagesTitleAndSubtitle
-          title={"Galeria"}
-          subtitle={"Nasze realizacje"}
+          title={"Balie"}
+          subtitle={"Produkcja balii ogrodowych"}
         />
-
-        <GalleryListStyled>
+        <VatsListStyled>
           {vatsInfoArr.map((item, index) => (
-            <GalleryItem
-              key={index}
-              src={item.imgPath}
-              alt={`Image ${index + 1}`}
-            />
+            <VatsItem key={index} {...item} />
           ))}
-        </GalleryListStyled>
+        </VatsListStyled>
       </Container>
     </Section>
   );
