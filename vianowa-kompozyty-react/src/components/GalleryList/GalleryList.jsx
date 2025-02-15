@@ -1,7 +1,11 @@
 import { Section } from "../Section/Section";
 import { Container } from "../Container/Container";
 import { GalleryItem } from "../GalleryItem/GalleryItem";
-import { GalleryListStyled } from "./GalleryList.styled";
+import {
+  GalleryListStyled,
+  GallerySubtitle,
+  GalleryTitle,
+} from "./GalleryList.styled";
 
 const arr = [
   { path: "/img/balie/balia-1.jpg" },
@@ -20,6 +24,8 @@ export const GalleryList = () => {
   return (
     <Section>
       <Container>
+        <GalleryTitle>Galeria</GalleryTitle>
+        <GallerySubtitle>Nasze realizacje</GallerySubtitle>
         <GalleryListStyled>
           {arr.map((item, index) => (
             <GalleryItem

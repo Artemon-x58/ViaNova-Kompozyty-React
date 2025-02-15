@@ -70,9 +70,9 @@ export const advantagesArr = [
 export const addressData = [
   {
     type: "tel",
-    href: "tel:+48513877888",
+    href: "tel:+48731699453",
     icon: "icon-phone",
-    text: "513877888",
+    text: "731 699 453",
   },
   {
     type: "email",
@@ -83,7 +83,12 @@ export const addressData = [
   {
     type: "address",
     icon: "icon-home",
-    text: "42-240 Kościelec ul. Miodowa 9",
+    text: "16-300 Augustów, ",
+  },
+  {
+    type: "address",
+    icon: "icon-home",
+    text: "03-523 Warszawa ul.Lidzka 5",
   },
 ];
 
