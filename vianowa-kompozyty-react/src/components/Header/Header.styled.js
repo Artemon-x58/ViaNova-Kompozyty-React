@@ -6,8 +6,10 @@ export const HeaderStyled = styled.header`
   position: relative;
   width: 100%;
   padding-top: 20px;
-  height: 500px;
-  background-image: url(${image});
+  height: ${({ location }) => (location === "/" ? "500px" : "auto")};
+  background-image: ${({ location }) =>
+    location === "/" ? `url(${image})` : "none"};
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

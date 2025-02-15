@@ -25,8 +25,10 @@ export const Header = () => {
     document.body.classList.remove("no-scroll");
   }, [location]);
 
+  console.log(location);
+
   return (
-    <HeaderStyled>
+    <HeaderStyled location={location.pathname}>
       <HeaderWrapperRow>
         <Container>
           <HeaderWrapper>
