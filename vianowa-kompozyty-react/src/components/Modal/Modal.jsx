@@ -1,10 +1,16 @@
 import PropTypes from "prop-types";
-import { ModalContent, ModalImg, ModalStyled } from "./Modal.styled";
+import {
+  ModalContent,
+  ModalImg,
+  ModalStyled,
+  CloseButton,
+} from "./Modal.styled";
 
 export const Modal = ({ src, alt, onClick }) => {
   return (
     <ModalStyled onClick={onClick}>
-      <ModalContent>
+      <ModalContent onClick={(e) => e.stopPropagation()}>
+        <CloseButton onClick={onClick} />
         <ModalImg src={src} alt={alt} />
       </ModalContent>
     </ModalStyled>

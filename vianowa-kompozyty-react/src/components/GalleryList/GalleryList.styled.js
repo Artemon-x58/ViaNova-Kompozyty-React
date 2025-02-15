@@ -12,8 +12,4 @@ export const GalleryListStyled = styled.ul`
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-
-  &:hover {
-    box-shadow: 0 8px 16px rgba(255, 140, 0, 0.6);
-  }
 `;
