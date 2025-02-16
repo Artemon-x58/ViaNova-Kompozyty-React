@@ -7,11 +7,6 @@ export const VatsItemStyled = styled.li`
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  }
 `;
 
 export const VatsItemimg = styled.img`

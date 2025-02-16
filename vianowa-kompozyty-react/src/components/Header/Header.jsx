@@ -26,11 +26,11 @@ export const Header = () => {
   }, [location]);
 
   return (
-    <HeaderStyled location={location.pathname}>
+    <HeaderStyled $location={location.pathname}>
       <HeaderWrapperRow>
         <Container>
           <HeaderWrapper>
-            <LogoHeaderLink to={"/"}>
+            <LogoHeaderLink to="/">
               <LogoHeaderSvg>
                 <use href={`${Icons}#icon-logo`}></use>
               </LogoHeaderSvg>

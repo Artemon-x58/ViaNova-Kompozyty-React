@@ -8,6 +8,7 @@ import {
   DefiniteVatDescription,
   DefiniteVatWrapper,
 } from "./DefiniteVat.styled";
+import { OptionsList } from "../OptionsList/OptionsList";
 
 export const DefiniteVat = () => {
   const { id } = useParams();
@@ -17,11 +18,12 @@ export const DefiniteVat = () => {
   return (
     <Section>
       <Container>
-        <PagesTitleAndSubtitle title={vat.name} subtitle={vat.minPrice} />
+        <PagesTitleAndSubtitle title={vat.name} subtitle={vat.about} />
         <DefiniteVatWrapper>
           <Slider />
           <DefiniteVatDescription>{vat.about}</DefiniteVatDescription>
         </DefiniteVatWrapper>
+        <OptionsList minPrice={vat.minPrice} />
       </Container>
     </Section>
   );
