@@ -1,9 +1,11 @@
+import Icon from "../../icons/sprite.svg";
 import PropTypes from "prop-types";
 import {
   VatsItemimg,
   VatsItemLink,
   VatsItemPrice,
   VatsItemStyled,
+  VatsItemSvg,
   VatsItemText,
   VatsItemTitle,
 } from "./VatsItem.styled";
@@ -15,7 +17,12 @@ export const VatsItem = ({ id, name, imgPath, minPrice, about }) => {
       <VatsItemTitle>{name}</VatsItemTitle>
       <VatsItemPrice>OD {minPrice}</VatsItemPrice>
       <VatsItemText>{about}</VatsItemText>
-      <VatsItemLink to={`/balie/${id}`}>Zobacz więcej</VatsItemLink>
+      <VatsItemLink to={`/balie/${id}`}>
+        Zobacz więcej{" "}
+        <VatsItemSvg>
+          <use href={`${Icon}#icon-arrow-right`}></use>
+        </VatsItemSvg>
+      </VatsItemLink>
     </VatsItemStyled>
   );
 };

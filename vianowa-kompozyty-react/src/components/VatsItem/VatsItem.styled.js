@@ -44,6 +44,7 @@ export const VatsItemPrice = styled.p`
 `;
 
 export const VatsItemText = styled.p`
+  font-family: "Bebasneue", sans-serif;
   font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
 
   margin: 0 15px 15px;
@@ -53,8 +54,10 @@ export const VatsItemText = styled.p`
 `;
 
 export const VatsItemLink = styled(Link)`
-  display: block;
-  text-align: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
   margin-bottom: 10px;
 
   font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
@@ -67,5 +70,16 @@ export const VatsItemLink = styled(Link)`
   &:hover {
     color: unset;
     transform: scale(1.05);
+
+    & > svg {
+      fill: #fff;
+    }
   }
+`;
+
+export const VatsItemSvg = styled.svg`
+  width: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+  height: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+  fill: var(--accent);
+  transition: fill 0.3s ease;
 `;
