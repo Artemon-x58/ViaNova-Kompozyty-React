@@ -5,7 +5,7 @@ import { AddressStyled } from "./Address.styled";
 
 export const Address = ({ format }) => {
   return (
-    <AddressStyled>
+    <AddressStyled format={format}>
       {addressData.map((item, index) => (
         <AddressItem key={index} format={format} {...item} />
       ))}

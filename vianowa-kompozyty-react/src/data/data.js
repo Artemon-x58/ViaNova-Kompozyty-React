@@ -101,7 +101,7 @@ export const footerProductsArr = [
 ];
 
 export const footerInfoArr = [
-  { name: "KONTAKT", path: "/contacts" },
+  { name: "KONTAKT", path: "/kontakt" },
   { name: "POLITYKA PRYWATNOŚCI", path: "/politic" },
   { name: "POLITYKA PLIKÓW COOKIES", path: "/cookies" },
 ];
