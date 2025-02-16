@@ -87,7 +87,7 @@ export const addressData = [
   },
   {
     type: "address",
-    icon: "icon-home",
+    icon: "icon-office",
     text: "03-523 Warszawa ul.Lidzka 5",
   },
 ];
