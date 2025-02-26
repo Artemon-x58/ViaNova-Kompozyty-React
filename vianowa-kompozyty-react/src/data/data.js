@@ -1,9 +1,8 @@
 export const navListArr = [
   { name: "STRONA GŁÓWNA", path: "/" },
   { name: "BALIE", path: "/balie" },
-  { name: "ZESTAWY", path: "/zestawy" },
+  { name: "Konfiguracja", path: "/konfiguracja" },
   { name: "AKCESORIA", path: "/akcesoria" },
-  { name: "WKŁADY", path: "/wklady" },
   { name: "SAUNY", path: "/sauny" },
   { name: "GALERIA", path: "/galeria" },
   { name: "KONTAKT", path: "/kontakt" },
@@ -297,5 +296,88 @@ export const accessories = [
     price: 400,
     about:
       "Dokładny termometr pozwala kontrolować temperaturę wody, zapewniając komfortową kąpiel.",
+  },
+];
+
+export const inserts = [
+  {
+    id: "1",
+    name: "Wkład akrylowy standardowy",
+    imgPath: "/img/inserts/insert.webp",
+    minPrice: 4500,
+    about:
+      "Trwały i łatwy w czyszczeniu wkład akrylowy zapewniający komfortową kąpiel oraz estetyczny wygląd chanu.",
+  },
+  {
+    id: "2",
+    name: "Wkład akrylowy premium",
+    imgPath: "/img/inserts/insert.webp",
+    minPrice: 6500,
+    about:
+      "Wysokiej jakości wkład akrylowy z dodatkową warstwą izolacji, zapewniający jeszcze lepszą trwałość i wygodę.",
+  },
+  {
+    id: "3",
+    name: "Wkład z włókna szklanego",
+    imgPath: "/img/inserts/insert.webp",
+    minPrice: 5000,
+    about:
+      "Lekki, odporny na uszkodzenia mechaniczne wkład wykonany z włókna szklanego, gwarantujący długą żywotność.",
+  },
+  {
+    id: "4",
+    name: "Wkład stal nierdzewna",
+    imgPath: "/img/inserts/insert.webp",
+    minPrice: 9000,
+    about:
+      "Ekskluzywny wkład wykonany ze stali nierdzewnej, zapewniający nowoczesny wygląd i najwyższą trwałość.",
+  },
+  {
+    id: "5",
+    name: "Wkład drewniany impregnowany",
+    imgPath: "/img/inserts/insert.webp",
+    minPrice: 4000,
+    about:
+      "Tradycyjny wkład drewniany z dodatkową warstwą impregnacji, który dodaje naturalnego uroku Twojemu chanu.",
+  },
+  {
+    id: "6",
+    name: "Wkład termoizolacyjny",
+    imgPath: "/img/inserts/insert.webp",
+    minPrice: 7500,
+    about:
+      "Nowoczesny wkład z warstwą termoizolacyjną, który pomaga utrzymać temperaturę wody na dłużej.",
+  },
+  {
+    id: "7",
+    name: "Wkład z powłoką antybakteryjną",
+    imgPath: "/img/inserts/insert.webp",
+    minPrice: 7000,
+    about:
+      "Specjalna powłoka antybakteryjna zapewniająca higienę i łatwość w utrzymaniu czystości.",
+  },
+  {
+    id: "8",
+    name: "Wkład ergonomiczny",
+    imgPath: "/img/inserts/insert.webp",
+    minPrice: 8000,
+    about:
+      "Zaprojektowany z myślą o maksymalnym komforcie, posiada ergonomiczne kształty dopasowane do ciała.",
+  },
+  {
+    id: "9",
+    name: "Wkład ekologiczny",
+    imgPath: "/img/inserts/insert.webp",
+    minPrice: 5500,
+    about:
+      "Ekologiczny wkład wykonany z przyjaznych dla środowiska materiałów, idealny dla miłośników natury.",
+  },
+  {
+    id: "10",
+    name: "Wkład z systemem masażu",
+    imgPath: "/img/inserts/insert.webp",
+    minPrice: 10000,
+    about:
+      "Luksusowy wkład wyposażony w system masażu wodnego, zapewniający relaks na najwyższym poziomie.",
   },
 ];

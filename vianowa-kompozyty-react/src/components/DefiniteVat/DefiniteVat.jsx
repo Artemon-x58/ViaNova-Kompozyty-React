@@ -18,7 +18,7 @@ export const DefiniteVat = () => {
   return (
     <Section>
       <Container>
-        <PagesTitleAndSubtitle title={vat.name} subtitle={vat.about} />
+        <PagesTitleAndSubtitle title={vat.name} subtitle={""} />
         <DefiniteVatWrapper>
           <Slider />
           <DefiniteVatDescription>{vat.about}</DefiniteVatDescription>
