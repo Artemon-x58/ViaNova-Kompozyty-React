@@ -1,5 +1,6 @@
 import { Address } from "../Address/Address";
 import { Container } from "../Container/Container";
+import { PagesTitleAndSubtitle } from "../PagesTitleAndSubtitle/PagesTitleAndSubtitle";
 import {
   LocationGoogleMap,
   LocationTitle,
@@ -9,6 +10,7 @@ import {
 export const Location = () => {
   return (
     <Container>
+      <PagesTitleAndSubtitle title={"Kontakt"} subtitle={""} />
       <LocationWrapper>
         <div>
           <LocationTitle>Chcesz o coś zapytać?</LocationTitle>

@@ -216,3 +216,86 @@ export const vatOptions = [
   { id: 9, name: "Seans z saunamistrzem", price: 2000 },
   { id: 10, name: "Pokój solny", price: 1200 },
 ];
+
+export const accessories = [
+  {
+    id: "1",
+    name: "Pokrywa termiczna",
+    imgPath: "/img/accessories/accessories.jpg",
+    minPrice: 2500,
+    about:
+      "Wysokiej jakości pokrywa termiczna pomaga utrzymać temperaturę wody i chroni balię przed zanieczyszczeniami. Idealne rozwiązanie na każdą pogodę.",
+  },
+  {
+    id: "2",
+    name: "Schodki drewniane",
+    imgPath: "/img/accessories/accessories.jpg",
+    minPrice: 1200,
+    about:
+      "Stylowe i solidne schodki ułatwiają wygodne wejście i wyjście z balii. Wykonane z odpornego na wilgoć drewna.",
+  },
+  {
+    id: "3",
+    name: "Filtr wody",
+    imgPath: "/img/accessories/accessories.jpg",
+    minPrice: 1800,
+    about:
+      "System filtracji zapewnia czystą i higieniczną wodę w Twojej balii, redukując zanieczyszczenia i bakterie.",
+  },
+  {
+    id: "4",
+    name: "Oświetlenie LED",
+    imgPath: "/img/accessories/accessories.jpg",
+    minPrice: 900,
+    about:
+      "Kolorowe oświetlenie LED pozwala stworzyć wyjątkową atmosferę podczas kąpieli, podkreślając elegancję Twojej balii.",
+  },
+  {
+    id: "5",
+    name: "Aeromasaż",
+    imgPath: "/img/accessories/accessories.jpg",
+    minPrice: 3500,
+    about:
+      "System aeromasażu zapewnia relaksujące bąbelki, które doskonale odprężają ciało i poprawiają krążenie.",
+  },
+  {
+    id: "6",
+    name: "System ogrzewania elektrycznego",
+    imgPath: "/img/accessories/accessories.jpg",
+    minPrice: 4800,
+    about:
+      "Elektryczny system ogrzewania umożliwia szybkie i efektywne podgrzewanie wody bez potrzeby użycia drewna.",
+  },
+  {
+    id: "7",
+    name: "Pokrowiec ochronny",
+    imgPath: "/img/accessories/accessories.jpg",
+    minPrice: 1500,
+    about:
+      "Pokrowiec ochronny zabezpiecza balię przed kurzem, deszczem i promieniami UV, wydłużając jej żywotność.",
+  },
+  {
+    id: "8",
+    name: "Podgrzewacz gazowy",
+    imgPath: "/img/accessories/accessories.jpg",
+    minPrice: 5200,
+    about:
+      "Wydajny podgrzewacz gazowy pozwala na szybkie nagrzanie wody w balii, idealne rozwiązanie dla osób ceniących wygodę.",
+  },
+  {
+    id: "9",
+    name: "Uchwyt na napoje",
+    imgPath: "/img/accessories/accessories.jpg",
+    minPrice: 700,
+    about:
+      "Praktyczny uchwyt na napoje pozwala cieszyć się ulubionymi drinkami podczas relaksu w balii.",
+  },
+  {
+    id: "10",
+    name: "Termometr wody",
+    imgPath: "/img/accessories/accessories.jpg",
+    minPrice: 400,
+    about:
+      "Dokładny termometr pozwala kontrolować temperaturę wody, zapewniając komfortową kąpiel.",
+  },
+];
