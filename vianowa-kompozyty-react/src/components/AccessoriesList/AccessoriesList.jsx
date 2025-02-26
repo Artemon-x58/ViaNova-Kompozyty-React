@@ -1,10 +1,17 @@
 import { AccessoriesListStyled } from "./AccessoriesList.styled";
 import { PagesTitleAndSubtitle } from "../PagesTitleAndSubtitle/PagesTitleAndSubtitle";
+import { accessories } from "../../data/data";
+import { AccessoriesItem } from "../AccessoriesItem/AccessoriesItem";
 
 export const AccessoriesList = () => {
   return (
-    <AccessoriesListStyled>
+    <>
       <PagesTitleAndSubtitle title={"akcesoria"} subtitle={""} />
-    </AccessoriesListStyled>
+      <AccessoriesListStyled>
+        {accessories.map((item) => (
+          <AccessoriesItem key={item.id} {...item} />
+        ))}
+      </AccessoriesListStyled>
+    </>
   );
 };
