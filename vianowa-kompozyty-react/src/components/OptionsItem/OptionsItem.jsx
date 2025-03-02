@@ -10,16 +10,10 @@ import {
 } from "./OptionsItem.styled";
 import { useState } from "react";
 
-export const OptionsItem = ({ name, price, onSelect }) => {
+export const OptionsItem = ({ name, price }) => {
   const [isSelected, setIsSelected] = useState(false);
 
-  const toggleSelect = () => {
-    setIsSelected((prev) => {
-      const newState = !prev;
-      onSelect(price, newState);
-      return newState;
-    });
-  };
+  const toggleSelect = () => {};
 
   return (
     <OptionsItemStyled>
@@ -42,5 +36,4 @@ export const OptionsItem = ({ name, price, onSelect }) => {
 OptionsItem.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  onSelect: PropTypes.func.isRequired,
 };

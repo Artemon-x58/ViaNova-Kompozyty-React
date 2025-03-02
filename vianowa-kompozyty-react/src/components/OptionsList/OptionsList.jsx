@@ -1,44 +1,25 @@
-import { useState, useEffect } from "react";
 import { vatOptions } from "../../data/data";
 import { OptionsItem } from "../OptionsItem/OptionsItem";
 import { OptionsItemTitle } from "../OptionsList/OptionsList.styled";
 import { OptionsListStyled, OptionsListSum } from "./OptionsList.styled";
-import PropTypes from "prop-types";
+import { useSelector } from "react-redux";
+import { selectVat } from "../../redux/vats/vatsSelectors";
+import { useParams } from "react-router-dom";
 
-export const OptionsList = ({ minPrice }) => {
-  const [sum, setSum] = useState(minPrice);
-  const [selectedPrices, setSelectedPrices] = useState([]);
+export const OptionsList = () => {
+  const { id } = useParams();
 
-  const handleSelect = (price, isSelected) => {
-    setSelectedPrices((prevSelectedPrices) => {
-      const updatedPrices = isSelected
-        ? [...prevSelectedPrices, price] // Добавляем цену, если выбран
-        : prevSelectedPrices.filter((p) => p !== price); // Убираем, если снят
-      return updatedPrices;
-    });
-  };
-
-  // Обновляем сумму, когда изменяется список выбранных цен
-  useEffect(() => {
-    setSum(selectedPrices.reduce((total, price) => total + price, minPrice)); // Считаем сумму
-  }, [selectedPrices, minPrice]);
+  const { price } = useSelector(selectVat).find((item) => item.id === id);
 
   return (
     <OptionsListStyled>
-      <OptionsItemTitle>Opcje</OptionsItemTitle>
-      {vatOptions.map(({ id, name, price }) => (
-        <OptionsItem
-          key={id}
-          name={name}
-          price={price}
-          onSelect={handleSelect}
-        />
-      ))}
-      <OptionsListSum>Razem: {sum} zł</OptionsListSum>
+      <>
+        <OptionsItemTitle>Opcje</OptionsItemTitle>
+        {vatOptions.map(({ id, name, price }) => (
+          <OptionsItem key={id} id={id} name={name} price={price} />
+        ))}
+        <OptionsListSum>Razem: {price} zł</OptionsListSum>
+      </>
     </OptionsListStyled>
   );
-};
-
-OptionsList.propTypes = {
-  minPrice: PropTypes.number.isRequired,
 };

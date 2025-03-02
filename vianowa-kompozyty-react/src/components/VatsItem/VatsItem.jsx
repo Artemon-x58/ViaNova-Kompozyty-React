@@ -10,12 +10,12 @@ import {
   VatsItemTitle,
 } from "./VatsItem.styled";
 
-export const VatsItem = ({ id, name, imgPath, minPrice, about }) => {
+export const VatsItem = ({ id, name, imgPath, price, about }) => {
   return (
     <VatsItemStyled>
       <VatsItemimg src={imgPath} alt={name} />
       <VatsItemTitle>{name}</VatsItemTitle>
-      <VatsItemPrice>OD {minPrice} zł</VatsItemPrice>
+      <VatsItemPrice>OD {price} zł</VatsItemPrice>
       <VatsItemText>{about}</VatsItemText>
       <VatsItemLink to={`/balie/${id}`}>
         Zobacz więcej{" "}
@@ -31,6 +31,6 @@ VatsItem.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   imgPath: PropTypes.string.isRequired,
-  minPrice: PropTypes.number.isRequired,
+  price: PropTypes.number.isRequired,
   about: PropTypes.string.isRequired,
 };
