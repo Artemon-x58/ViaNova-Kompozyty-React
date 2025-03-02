@@ -1,6 +1,8 @@
 import { Container } from "../components/Container/Container";
+
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
+import { Insert } from "../components/Insert/Insert";
 import { Section } from "../components/Section/Section";
 
 export const InsertPage = () => {
@@ -9,7 +11,9 @@ export const InsertPage = () => {
       <Header />
       <main>
         <Section>
-          <Container></Container>
+          <Container>
+            <Insert />
+          </Container>
         </Section>
       </main>
       <Footer />
