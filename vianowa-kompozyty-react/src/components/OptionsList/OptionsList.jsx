@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 
 export const OptionsList = () => {
   const { id } = useParams();
+  const vatId = id;
 
   const { price } = useSelector(selectVat).find((item) => item.id === id);
 
@@ -16,7 +17,13 @@ export const OptionsList = () => {
       <>
         <OptionsItemTitle>Opcje</OptionsItemTitle>
         {vatOptions.map(({ id, name, price }) => (
-          <OptionsItem key={id} id={id} name={name} price={price} />
+          <OptionsItem
+            key={id}
+            vatId={vatId}
+            id={id}
+            name={name}
+            price={price}
+          />
         ))}
         <OptionsListSum>Razem: {price} zł</OptionsListSum>
       </>
