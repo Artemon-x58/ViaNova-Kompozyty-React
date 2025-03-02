@@ -33,3 +33,34 @@ export const AccessoriesItemPrice = styled.p`
   border-top: 2px solid rgba(255, 255, 255, 0.5);
   padding-top: 8px;
 `;
+
+export const AccessoriesItemAdd = styled.button`
+  background: linear-gradient(45deg, #ff8c00, #ff4500);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(255, 140, 0, 0.4);
+
+  &:hover,
+  :focus {
+    background: linear-gradient(45deg, #ff4500, #ff8c00);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 69, 0, 0.5);
+  }
+`;
+
+export const AccessoriesItemRemove = styled(AccessoriesItemAdd)`
+  background: #d32f2f;
+  box-shadow: 0 4px 8px rgba(211, 47, 47, 0.4);
+
+  &:hover,
+  :focus {
+    background: #b71c1c;
+    box-shadow: 0 6px 12px rgba(183, 28, 28, 0.5);
+  }
+`;
